@@ -9,7 +9,10 @@ var dispari = [];
 
 for (var i = 0; i < 6; i++) {
     var numero = parseInt(prompt("Inserisci un numero"));
-    if ((numero%2) == 1) {
+    if (numero%2 == 1) {
         dispari.push(numero);
     }
 }
+
+// mostro nella pagina solo i numeri dispari inseriti
+document.getElementById("numeri-dispari").innerHTML += dispari;
